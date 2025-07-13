@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политика конфиденциальности - PetDiary</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e7f1 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(90deg, #3498db 0%, #1a5d9f 100%);
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            font-size: 28px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .last-updated {
+            opacity: 0.9;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .lang-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .lang-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .lang-btn.active {
+            background: white;
+            color: #1a5d9f;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f4f8;
+            font-size: 24px;
+        }
+        
+        h3 {
+            color: #3498db;
+            margin: 20px 0 10px 0;
+            font-size: 20px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #444;
+        }
+        
+        ul {
+            padding-left: 25px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .highlight {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .contact-box {
+            background: linear-gradient(135deg, #f0f7ff 0%, #e3eeff 100%);
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 30px;
+            text-align: center;
+            border: 1px solid #d6e4f0;
+        }
+        
+        .contact-box h3 {
+            margin-top: 0;
+            color: #1a5d9f;
+        }
+        
+        .email-link {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .email-link:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            color: #7f8c8d;
+            font-size: 14px;
+            border-top: 1px solid #eaeaea;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 25px;
+            }
+            
+            header {
+                padding: 25px 20px;
+            }
+            
+            h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="ru">Русский</button>
+                <button class="lang-btn" data-lang="en">English</button>
+            </div>
+            
+            <div class="logo">
+                <i>🐾</i> PetDiary
+            </div>
+            <h1 id="main-title">Политика конфиденциальности</h1>
+            <div class="last-updated" id="last-updated">Обновлено: 25 июня 2025 г.</div>
+        </header>
+        
+        <div class="content">
+            <!-- Русский контент -->
+            <div class="lang-content ru">
+                <h2>1. Введение</h2>
+                <p>Настоящая Политика конфиденциальности описывает наши правила и процедуры в отношении сбора, использования и раскрытия вашей информации, когда вы используете Сервис "PetDiary".</p>
+                
+                <h2>2. Определения</h2>
+                <ul>
+                    <li><strong>Аккаунт:</strong> Уникальный доступ к Сервису</li>
+                    <li><strong>Приложение:</strong> Программное обеспечение "PetDiary"</li>
+                    <li><strong>Персональные данные:</strong> Информация, позволяющая идентифицировать владельца питомца</li>
+                    <li><strong>Данные о питомце:</strong> Информация о животных-компаньонах</li>
+                    <li><strong>Сервис:</strong> Приложение "PetDiary" и связанные с ним услуги</li>
+                    <li><strong>Данные об использовании:</strong> Автоматически собираемая информация</li>
+                    <li><strong>Вы:</strong> Пользователь Сервиса</li>
+                </ul>
+                
+                <h2>3. Отказ от ответственности</h2>
+                <p>Информация, предоставляемая Сервисом, предназначена только для общих целей ухода за питомцами и не является профессиональной ветеринарной консультацией.</p>
+                <p>Вы должны проконсультироваться с ветеринаром, если вашему питомцу требуется медицинская помощь, диагностика или лечение.</p>
+                
+                <div class="highlight">
+                    <p>Использование Сервиса осуществляется на ваш страх и риск. Сервис предоставляется "КАК ЕСТЬ" без каких-либо гарантий.</p>
+                </div>
+                
+                <h2>4. Типы собираемых данных</h2>
+                <h3>Данные, предоставляемые пользователем:</h3>
+                <ul>
+                    <li>Данные владельца: имя, email, страна</li>
+                    <li>Информация о питомце: имя, вид, порода, дата рождения, вес, фото</li>
+                    <li>Медицинские записи: вакцинации, лечение, история здоровья</li>
+                    <li>Графики кормления и активности</li>
+                </ul>
+                
+                <h3>Автоматически собираемые данные:</h3>
+                <p>Данные об использовании собираются автоматически при использовании Сервиса и могут включать:</p>
+                <ul>
+                    <li>IP-адрес устройства</li>
+                    <li>Тип и версия браузера</li>
+                    <li>Посещенные страницы нашего Сервиса</li>
+                    <li>Время и дата вашего визита</li>
+                    <li>Уникальные идентификаторы устройств</li>
+                </ul>
+                
+                <h2>5. Технологии отслеживания</h2>
+                <p>Мы используем файлы cookie и аналогичные технологии отслеживания для анализа и улучшения Сервиса.</p>
+                
+                <h3>Аналитические данные</h3>
+                <p>Мы используем:</p>
+                <ul>
+                    <li><strong>Google Firebase:</strong> Собирает данные об использовании сети, продолжительности сеансов, информации об устройстве, местоположении</li>
+                    <li><strong>Amplitude:</strong> Анализирует поведение пользователей</li>
+                    <li><strong>MyTracker:</strong> Аналитика продуктов и маркетинга</li>
+                </ul>
+            </div>
+            
+            <!-- Английский контент (изначально скрыт) -->
+            <div class="lang-content en" style="display: none;">
+                <h2>1. Introduction</h2>
+                <p>This Privacy Policy describes our policies and procedures regarding the collection, use, and disclosure of your information when you use the "PetDiary" Service.</p>
+                
+                <h2>2. Definitions</h2>
+                <ul>
+                    <li><strong>Account:</strong> Unique access to the Service</li>
+                    <li><strong>Application:</strong> "PetDiary" software</li>
+                    <li><strong>Personal Data:</strong> Identifiable pet owner information</li>
+                    <li><strong>Pet Data:</strong> Information about companion animals</li>
+                    <li><strong>Service:</strong> "PetDiary" application and related services</li>
+                    <li><strong>Usage Data:</strong> Automatically collected information</li>
+                    <li><strong>You:</strong> Service user</li>
+                </ul>
+                
+                <h2>3. Disclaimer</h2>
+                <p>The information provided by the Service is for general pet care purposes only and does not constitute professional veterinary advice.</p>
+                <p>You should consult a veterinarian if your pet requires medical attention, diagnosis, or treatment.</p>
+                
+                <div class="highlight">
+                    <p>You use the Service at your own risk. The Service is provided "AS IS" without any warranties.</p>
+                </div>
+                
+                <h2>4. Types of Data Collected</h2>
+                <h3>User-provided data:</h3>
+                <ul>
+                    <li>Owner details: name, email, country</li>
+                    <li>Pet information: name, species, breed, birthdate, weight, photos</li>
+                    <li>Medical records: vaccinations, treatments, health history</li>
+                    <li>Feeding schedules and activity logs</li>
+                </ul>
+                
+                <h3>Automatically collected data:</h3>
+                <p>Usage Data is collected automatically when using the Service and may include:</p>
+                <ul>
+                    <li>Device's Internet Protocol address (IP address)</li>
+                    <li>Browser type and version</li>
+                    <li>Pages of our Service that you visit</li>
+                    <li>Time and date of your visit</li>
+                    <li>Unique device identifiers</li>
+                </ul>
+                
+                <h2>5. Tracking Technologies</h2>
+                <p>We use Cookies and similar tracking technologies to analyze and improve the Service.</p>
+                
+                <h3>Analytics Data</h3>
+                <p>We use:</p>
+                <ul>
+                    <li><strong>Google Firebase:</strong> Collects network usage, session duration, device info, location</li>
+                    <li><strong>Amplitude:</strong> Analyzes user behavior</li>
+                    <li><strong>MyTracker:</strong> Product and marketing analytics</li>
+                </ul>
+            </div>
+            
+            <div class="contact-box">
+                <h3 id="contact-title">Свяжитесь с нами</h3>
+                <p id="contact-text">Если у вас есть вопросы о нашей Политике конфиденциальности, вы можете связаться с нами по электронной почте:</p>
+                <a href="mailto:moobi3490@gmail.com" class="email-link">moobi3490@gmail.com</a>
+            </div>
+        </div>
+        
+        <footer>
+            <p id="footer-text">© 2025 PetDiary. Все права защищены.</p>
+        </footer>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const langButtons = document.querySelectorAll('.lang-btn');
+            const langContents = document.querySelectorAll('.lang-content');
+            const mainTitle = document.getElementById('main-title');
+            const lastUpdated = document.getElementById('last-updated');
+            const contactTitle = document.getElementById('contact-title');
+            const contactText = document.getElementById('contact-text');
+            const footerText = document.getElementById('footer-text');
+            
+            // Переключение языка
+            langButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const lang = this.getAttribute('data-lang');
+                    
+                    // Обновляем активную кнопку
+                    langButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Показываем/скрываем контент
+                    langContents.forEach(content => {
+                        if (content.classList.contains(lang)) {
+                            content.style.display = 'block';
+                        } else {
+                            content.style.display = 'none';
+                        }
+                    });
+                    
+                    // Обновляем статичные элементы на странице
+                    if (lang === 'ru') {
+                        mainTitle.textContent = 'Политика конфиденциальности';
+                        lastUpdated.textContent = 'Обновлено: 25 июня 2025 г.';
+                        contactTitle.textContent = 'Свяжитесь с нами';
+                        contactText.textContent = 'Если у вас есть вопросы о нашей Политике конфиденциальности, вы можете связаться с нами по электронной почте:';
+                        footerText.textContent = '© 2025 PetDiary. Все права защищены.';
+                    } else {
+                        mainTitle.textContent = 'Privacy Policy';
+                        lastUpdated.textContent = 'Last Updated: June 25, 2025';
+                        contactTitle.textContent = 'Contact Us';
+                        contactText.textContent = 'If you have any questions about our Privacy Policy, you can contact us by email:';
+                        footerText.textContent = '© 2025 PetDiary. All rights reserved.';
+                    }
+                });
+            });
+            
+            // Сохранение выбранного языка в localStorage
+            const savedLang = localStorage.getItem('preferredLang');
+            if (savedLang) {
+                const button = document.querySelector(`.lang-btn[data-lang="${savedLang}"]`);
+                if (button) button.click();
+            }
+            
+            // Сохраняем выбор пользователя
+            langButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const lang = this.getAttribute('data-lang');
+                    localStorage.setItem('preferredLang', lang);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
